@@ -1,0 +1,31 @@
+<section class="<?php echo implode(' ', $classes['recent-posts']); ?>" id="recent-posts">
+	<div class="BlogSlider">
+		<?php while ( have_posts() ) : the_post(); ?>
+		
+		
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+		<?php endwhile; ?>
+	</div>
+</section>
+<link href="<?php bloginfo('stylesheet_directory'); ?>/css/slick-min.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slick-min.js"></script>
+<script>
+    jQuery(document).ready(function($){
+        $('.BlogSlider').slick({
+        slidesToShow: 3,
+        infinite: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4510,
+        responsive: [{
+                breakpoint: 639,
+                settings: {
+                    slidesToShow: 1,
+                }}]
+    });
+            
+        });    
+    
+</script>
