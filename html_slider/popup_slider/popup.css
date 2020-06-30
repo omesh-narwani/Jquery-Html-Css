@@ -1,0 +1,59 @@
+/ MODAL Measurement CSS /
+
+#vpc-form-builder-wrap {
+    z-index: 99999;
+}
+
+.measurment-block #display_ofb {
+    background: #f3f3f3;
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 70%;
+}
+.measurment-block #display_ofb input {
+    margin: auto;
+}
+
+.measurment-block #display_ofb div {
+    border-bottom: 1px solid #ccc;
+}
+.measurment-block #display_ofb form div label {
+    width: 100%;
+}
+
+.measurment-block #display_ofb form div label iframe {
+    height: 380px;
+    width: 675px;
+}
+
+.personalized-suits #vpc-components {
+    margin-top: 0 !important;
+}
+.measurment-modal {
+    background: #562101;
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: none;
+}
+.personalized-suits .measurment-modal {
+    display: block !important;
+}
+
+.measurment-block  .bxslider-measurment div {
+    position: static !important;
+    height: 510px;
+    width: 100% !important;
+}
+.measurment-block  .bx-pager.bx-default-pager {
+    display: none;
+}
+
+.measurment-block  .bx-wrapper .bx-controls-direction a {
+    height: 32px;
+    text-indent: 0;
+    font-size: 38px;
+    background: #000;
+    color: #fff;
+}
