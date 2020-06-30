@@ -1,0 +1,17 @@
+#contact-form-main {
+    width: 100%;
+    max-width: 250px;
+    will-change: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-4deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+}
+#contact-form-main:hover {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
